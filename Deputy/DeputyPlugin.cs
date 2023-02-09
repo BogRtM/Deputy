@@ -21,6 +21,7 @@ using Deputy.Modules;
 namespace Deputy
 {
     [BepInDependency("com.bepis.r2api", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.DestroyedClone.AncientScepter", BepInDependency.DependencyFlags.SoftDependency)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     [BepInPlugin(MODUID, MODNAME, MODVERSION)]
     [R2APISubmoduleDependency(new string[]
@@ -40,7 +41,7 @@ namespace Deputy
         public const string MODUID = "com.Bog.Deputy";
         public const string MODNAME = "Deputy";
 
-        public const string MODVERSION = "0.2.0";
+        public const string MODVERSION = "0.3.0";
 
         // a prefix for name tokens to prevent conflicts- please capitalize all name tokens for convention
         public const string DEVELOPER_PREFIX = "BOG";
