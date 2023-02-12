@@ -14,6 +14,7 @@ using UnityEngine.UI;
 using System;
 using EntityStates.Merc;
 using Deputy.Modules;
+using BepInEx.Bootstrap;
 
 [module: UnverifiableCode]
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
@@ -51,6 +52,8 @@ namespace Deputy
         public static GameObject deputyBodyPrefab;
         public static BodyIndex deputyBodyIndex;
 
+        public static bool scepterInstalled;
+
         public static DamageAPI.ModdedDamageType grantDeputyBuff;
         public static DamageAPI.ModdedDamageType resetUtilityOnKill;
 
@@ -60,12 +63,17 @@ namespace Deputy
 
             Log.Init(Logger);
             Modules.Config.ReadConfig(this);
+
+            scepterInstalled = Chainloader.PluginInfos.ContainsKey("com.DestroyedClone.AncientScepter");
+
             Modules.Assets.Initialize(); // load assets and read config
             Modules.States.RegisterStates(); // register states for networking
             Modules.Buffs.RegisterBuffs(); // add and register custom buffs/debuffs
             Modules.Projectiles.RegisterProjectiles(); // add and register custom projectiles
             Modules.Tokens.AddTokens(); // register name tokens
             Modules.ItemDisplays.PopulateDisplays(); // collect item display prefabs for use in our display rules
+
+            
 
             grantDeputyBuff = DamageAPI.ReserveDamageType();
             resetUtilityOnKill = DamageAPI.ReserveDamageType();

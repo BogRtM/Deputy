@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 551296822
+CRC: 1431731069
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f886ab4e6030e170dbb9cce904a36ee1
+    Hash: 2203c438b30909116a5003db36bf8b69
   TypeTreeHash:
     serializedVersion: 2
     Hash: 46627e38267b9d0f4ae1d366cea1fd30
@@ -154,6 +154,7 @@ Assets:
 - Assets/DeputyAssets/VFX/HenryMaterials/texSwingEffect.png
 - Assets/DeputyAssets/Textures/deputyNormal.png
 - Assets/DeputyAssets/VFX/EffectMaterials/matRendingTalons.mat
+- Assets/DeputyAssets/DeputyHumanoidSkeleton.prefab
 - Assets/DeputyAssets/Animations/Clips/Fullbody, Override/Rig_07-GunSling.anim
 - Assets/DeputyAssets/VFX/HenryMaterials/matSwingShadow.mat
 - Assets/DeputyAssets/VFX/HenryMaterials/texSlash.png
@@ -190,6 +191,7 @@ Assets:
 - Assets/DeputyAssets/VFX/GunSlingFlash.prefab
 - Assets/DeputyAssets/VFX/EffectMaterials/Textures/texEmbers.png
 - Assets/DeputyAssets/VFX/EffectMaterials/Textures/texLightning.tif
+- Assets/DeputyAssets/FBX/DeputyHumanoidSkeleton.fbx
 - Assets/DeputyAssets/Animations/Clips/Body Combat/Rig_03c-Sprint-Combat.anim
 - Assets/DeputyAssets/VFX/HenryMaterials/matRipple.mat
 - Assets/DeputyAssets/VFX/EffectMaterials/Flash.mat

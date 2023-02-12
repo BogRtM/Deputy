@@ -97,6 +97,12 @@ namespace Deputy.Modules.Survivors
         public override void InitializeCharacter()
         {
             base.InitializeCharacter();
+
+            if(DeputyPlugin.scepterInstalled)
+            {
+                this.InitializeScepterSkills();
+            }
+
             DeputyPlugin.deputyBodyPrefab = this.bodyPrefab;
 
             CharacterBody deputyBody = bodyPrefab.GetComponent<CharacterBody>();
@@ -131,6 +137,11 @@ namespace Deputy.Modules.Survivors
             
             Transform dashHitbox = childLocator.FindChild("DashHitbox");
             Modules.Prefabs.SetupHitbox(model, dashHitbox, "Dash");
+        }
+
+        public void InitializeScepterSkills()
+        {
+            
         }
 
         public override void InitializeSkills()
