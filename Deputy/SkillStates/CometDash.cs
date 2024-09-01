@@ -47,13 +47,13 @@ namespace Skillstates.Deputy
             {
                 hitBoxGroup = Array.Find<HitBoxGroup>(modelTransform.GetComponents<HitBoxGroup>(), (HitBoxGroup element) => element.groupName == "Dash");
 
-                TemporaryOverlay temporaryOverlay = modelTransform.gameObject.AddComponent<TemporaryOverlay>();
+                TemporaryOverlayInstance temporaryOverlay = TemporaryOverlayManager.AddOverlay(base.gameObject);
                 temporaryOverlay.duration = baseDuration * 3f;
                 temporaryOverlay.animateShaderAlpha = true;
                 temporaryOverlay.alphaCurve = AnimationCurve.EaseInOut(0f, 1f, 1f, 0f);
                 temporaryOverlay.destroyComponentOnEnd = true;
                 temporaryOverlay.originalMaterial = LegacyResourcesAPI.Load<Material>("Materials/matHuntressFlashBright");
-                temporaryOverlay.AddToCharacerModel(modelTransform.GetComponent<CharacterModel>());
+                temporaryOverlay.AddToCharacterModel(modelTransform.GetComponent<CharacterModel>());
             }
 
             this.attack = new OverlapAttack();
@@ -67,7 +67,7 @@ namespace Skillstates.Deputy
             attack.pushAwayForce = 1f;
             attack.damage = damageCoefficient * damageStat * this.GetDamageBoostFromSpeed();
             attack.hitBoxGroup = hitBoxGroup;
-            attack.hitEffectPrefab = Assets.skullCrackerImpact;
+            attack.hitEffectPrefab = DeputyAssets.skullCrackerImpact;
             attack.AddModdedDamageType(DeputyPlugin.grantDeputyBuff);
             attack.AddModdedDamageType(DeputyPlugin.resetUtilityOnKill);
 
