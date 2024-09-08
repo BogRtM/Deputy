@@ -1,3 +1,9 @@
+# 0.3.2 DISCLAIMER
+
+The recent 0.3.2 update was done hastily, and without any multiplayer testing. Please contact `bog_rtm` on Discord if you run into any bugs.
+
+I do not own Seekers of the Storm, so I am unaware of any potential bugs or incompatabilities with the new contact.
+
 ## Known issues
 
 Animation smoothing is currently jank. This isn't something that will affect gameplay, but under certain conditions you may see weird snapping between animations. It is something I am actively working on.
@@ -23,7 +29,7 @@ This survivor was inspired by the Ranger from Dungeon & Fighter.
 ![image](https://user-images.githubusercontent.com/55299061/216581639-9be53fde-0990-43ae-a258-23bb59d00779.png)
 
 ## Contact Me
-For feedback and bug reports, please reach out to `Bog#4770` on Discord. You can also find me on the official Risk of Rain 2 modding server.
+For feedback and bug reports, please reach out to `bog_rtm` on Discord. You can also find me on the official Risk of Rain 2 modding server.
 
 ## Credits
 ```
