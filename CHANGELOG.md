@@ -1,12 +1,22 @@
 ### Latest Patch
+`0.3.3`
+```
+• Publicized all entity states as well as RevolverProjectileBehavior component
+```
+PLEASE READ THE DISCLAIMER IN THE README
+<details>
+    <summary>Previous patches</summary>
+
+`0.3.2`
+```
+• Updated for Seekers of the Storm
+```
+
 `0.3.1`
 ```
 • Updated bepinex and mmhook dependencies for the Devotion patch
 ```
 This update was kindly contributed by Moffein
-
-<details>
-    <summary>Previous patches</summary>
 
 `0.3.0`
 ```
