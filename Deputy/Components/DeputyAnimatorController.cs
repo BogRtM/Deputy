@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Deputy.Components
 {
-    internal class DeputyAnimatorController : MonoBehaviour
+    public class DeputyAnimatorController : MonoBehaviour
     {
         private Animator modelAnimator;
         public static int combatLayerIndex;
