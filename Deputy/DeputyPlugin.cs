@@ -42,7 +42,7 @@ namespace Deputy
         public const string MODUID = "com.Bog.Deputy";
         public const string MODNAME = "Deputy";
 
-        public const string MODVERSION = "0.3.0";
+        public const string MODVERSION = "0.3.3";
 
         // a prefix for name tokens to prevent conflicts- please capitalize all name tokens for convention
         public const string DEVELOPER_PREFIX = "BOG";

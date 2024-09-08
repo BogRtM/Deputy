@@ -3,7 +3,7 @@ using RoR2;
 using EntityStates;
 namespace Skillstates.Deputy
 {
-    internal class BulletHeavenLoop : BaseState
+    public class BulletHeavenLoop : BaseState
     {
         public static float baseDuration = 2f;
 

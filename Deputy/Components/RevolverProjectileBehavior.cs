@@ -16,7 +16,7 @@ using Deputy.Modules;
 namespace Deputy.Components
 {
     [RequireComponent(typeof(ProjectileController))]
-    internal class RevolverProjectileBehavior : MonoBehaviour
+    public class RevolverProjectileBehavior : MonoBehaviour
     {
         public static int maxShots = 6;
         public static float bulletDamage = Config.gunSlingBulletDamage.Value;

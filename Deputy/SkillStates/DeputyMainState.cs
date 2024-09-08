@@ -5,7 +5,7 @@ using Deputy.Components;
 
 namespace Skillstates.Deputy
 {
-    internal class DeputyMainState : GenericCharacterMain
+    public class DeputyMainState : GenericCharacterMain
     {
         private DeputyAnimatorController DAC;
 

@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 namespace Skillstates.Deputy
 {
-    internal class CometBounceShoot : BaseState
+    public class CometBounceShoot : BaseState
     {
         public static float baseDuration = 1f;
         public static float preptime = 0.5f;

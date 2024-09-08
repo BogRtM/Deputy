@@ -3,7 +3,7 @@ using RoR2;
 using EntityStates;
 namespace Skillstates.Deputy
 {
-    internal class SkillTemplate : BaseState
+    public class SkillTemplate : BaseState
     {
         public override void OnEnter()
         {

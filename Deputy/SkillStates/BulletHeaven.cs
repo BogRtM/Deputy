@@ -8,7 +8,7 @@ using R2API;
 
 namespace Skillstates.Deputy
 {
-    internal class BulletHeaven : BaseState
+    public class BulletHeaven : BaseState
     {
         public static float jumpDuration = 0.6f;
         public static float loopDuration = 3f;

@@ -14,7 +14,7 @@ using Deputy;
 
 namespace Skillstates.Deputy
 {
-    internal class CometDash : BaseState
+    public class CometDash : BaseState
     {
         public static float baseDuration = 0.3f;
         //public static float speedCoefficient = 30f;

@@ -12,7 +12,7 @@ using R2API;
 
 namespace Skillstates.Deputy
 {
-    internal class ShootingStar : BaseState
+    public class ShootingStar : BaseState
     {
         public static float maxDuration = 2f;
         public static float minDuration = 1f;

@@ -11,7 +11,7 @@ using R2API;
 
 namespace Skillstates.Deputy
 {
-    internal class TriggerTap : BaseSkillState, SteppedSkillDef.IStepSetter
+    public class TriggerTap : BaseSkillState, SteppedSkillDef.IStepSetter
     {
         public static float damageCoefficient = Config.primaryDamage.Value;
         public static float baseDuration = 0.3f;

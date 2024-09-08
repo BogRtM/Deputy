@@ -10,7 +10,7 @@ using System;
 
 namespace Skillstates.Deputy
 {
-    internal class GunSling : BaseState
+    public class GunSling : BaseState
     {
         public static float baseDuration = 1f;
         public static float basePrepTime = 0.46f;
