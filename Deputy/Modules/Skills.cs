@@ -29,7 +29,7 @@ namespace Deputy.Modules
             skillLocator.passiveSkill.enabled = true;
             skillLocator.passiveSkill.skillNameToken = "BOG_DEPUTY_BODY_PASSIVE_NAME";
             skillLocator.passiveSkill.skillDescriptionToken = "BOG_DEPUTY_BODY_PASSIVE_DESCRIPTION";
-            skillLocator.passiveSkill.icon = Assets.mainAssetBundle.LoadAsset<Sprite>("HotPursuitIcon");
+            skillLocator.passiveSkill.icon = DeputyAssets.mainAssetBundle.LoadAsset<Sprite>("HotPursuitIcon");
 
             skillLocator.primary = CreateGenericSkillWithSkillFamily(targetPrefab, "Primary");
             skillLocator.secondary = CreateGenericSkillWithSkillFamily(targetPrefab, "Secondary");

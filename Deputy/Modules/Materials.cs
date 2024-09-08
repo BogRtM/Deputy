@@ -17,12 +17,12 @@ namespace Deputy.Modules
             if (tempMat)
                 return tempMat;
 
-            tempMat = Assets.mainAssetBundle.LoadAsset<Material>(materialName);
+            tempMat = DeputyAssets.mainAssetBundle.LoadAsset<Material>(materialName);
 
             if (!tempMat)
             {
                 Log.Error("Failed to load material: " + materialName + " - Check to see that the material in your Unity project matches this name");
-                return new Material(Assets.hotpoo);
+                return new Material(DeputyAssets.hotpoo);
             }
 
             return tempMat.SetHopooMaterial();
@@ -52,7 +52,7 @@ namespace Deputy.Modules
             }
 
             //set shader
-            tempMat.shader = Assets.hotpoo;
+            tempMat.shader = DeputyAssets.hotpoo;
 
             //apply values after shader is set
             tempMat.SetColor("_Color", tempMat.GetColor("_Color"));

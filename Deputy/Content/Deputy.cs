@@ -29,7 +29,7 @@ namespace Deputy.Modules.Survivors
             bodyNameToken = DeputyPlugin.DEVELOPER_PREFIX + "_DEPUTY_BODY_NAME",
             subtitleNameToken = DeputyPlugin.DEVELOPER_PREFIX + "_DEPUTY_BODY_SUBTITLE",
 
-            characterPortrait = Assets.mainAssetBundle.LoadAsset<Texture>("texDeputyIcon"),
+            characterPortrait = DeputyAssets.mainAssetBundle.LoadAsset<Texture>("texDeputyIcon"),
             //bodyColor = new Color(62f / 255f, 162f / 255f, 82f / 255f),
             bodyColor = new Color32(225, 193, 0, 255),
 
@@ -170,7 +170,7 @@ namespace Deputy.Modules.Survivors
             deputyPrimarySkillDef.skillName = prefix + "_DEPUTY_BODY_PRIMARY_SHOOT_NAME";
             deputyPrimarySkillDef.skillNameToken = prefix + "_DEPUTY_BODY_PRIMARY_SHOOT_NAME";
             deputyPrimarySkillDef.skillDescriptionToken = prefix + "_DEPUTY_BODY_PRIMARY_SHOOT_DESCRIPTION";
-            deputyPrimarySkillDef.icon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("QuickTriggerIcon");
+            deputyPrimarySkillDef.icon = Modules.DeputyAssets.mainAssetBundle.LoadAsset<Sprite>("QuickTriggerIcon");
             deputyPrimarySkillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(TriggerTap));
             deputyPrimarySkillDef.activationStateMachineName = "Weapon";
             deputyPrimarySkillDef.baseMaxStock = 1;
@@ -199,7 +199,7 @@ namespace Deputy.Modules.Survivors
                 skillName = prefix + "_DEPUTY_BODY_SECONDARY_SLING_NAME",
                 skillNameToken = prefix + "_DEPUTY_BODY_SECONDARY_SLING_NAME",
                 skillDescriptionToken = prefix + "_DEPUTY_BODY_SECONDARY_SLING_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("GunSlingIcon"),
+                skillIcon = Modules.DeputyAssets.mainAssetBundle.LoadAsset<Sprite>("GunSlingIcon"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(GunSling)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -227,7 +227,7 @@ namespace Deputy.Modules.Survivors
                 skillName = prefix + "_DEPUTY_BODY_UTILITY_SHOOTINGSTAR_NAME",
                 skillNameToken = prefix + "_DEPUTY_BODY_UTILITY_SHOOTINGSTAR_NAME",
                 skillDescriptionToken = prefix + "_DEPUTY_BODY_UTILITY_SHOOTINGSTAR_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("ShootingStarIcon"),
+                skillIcon = Modules.DeputyAssets.mainAssetBundle.LoadAsset<Sprite>("ShootingStarIcon"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(ShootingStar)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -256,7 +256,7 @@ namespace Deputy.Modules.Survivors
                 skillName = prefix + "_DEPUTY_BODY_SPECIAL_SKULLBREAKER_NAME",
                 skillNameToken = prefix + "_DEPUTY_BODY_SPECIAL_SKULLBREAKER_NAME",
                 skillDescriptionToken = prefix + "_DEPUTY_BODY_SPECIAL_SKULLBREAKER_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("SkullBreakerIcon"),
+                skillIcon = Modules.DeputyAssets.mainAssetBundle.LoadAsset<Sprite>("SkullBreakerIcon"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(CometDash)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -281,7 +281,7 @@ namespace Deputy.Modules.Survivors
                 skillName = prefix + "_DEPUTY_BODY_SPECIAL_BULLETHEAVEN_NAME",
                 skillNameToken = prefix + "_DEPUTY_BODY_SPECIAL_BULLETHEAVEN_NAME",
                 skillDescriptionToken = prefix + "_DEPUTY_BODY_SPECIAL_BULLETHEAVEN_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("BulletHeavenIcon"),
+                skillIcon = Modules.DeputyAssets.mainAssetBundle.LoadAsset<Sprite>("BulletHeavenIcon"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(BulletHeaven)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -319,7 +319,7 @@ namespace Deputy.Modules.Survivors
 
             #region DefaultSkin
             SkinDef defaultSkin = Modules.Skins.CreateSkinDef(DeputyPlugin.DEVELOPER_PREFIX + "_DEPUTY_BODY_DEFAULT_SKIN_NAME",
-                Assets.mainAssetBundle.LoadAsset<Sprite>("texMainSkin"), 
+                DeputyAssets.mainAssetBundle.LoadAsset<Sprite>("texMainSkin"), 
                 defaultRenderers,
                 mainRenderer,
                 model);

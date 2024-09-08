@@ -16,7 +16,7 @@ namespace Deputy.Modules {
 
         public static GameObject CreateDisplayPrefab(string displayModelName, GameObject prefab, BodyInfo bodyInfo)
         {
-            GameObject model = Assets.LoadSurvivorModel(displayModelName);
+            GameObject model = DeputyAssets.LoadSurvivorModel(displayModelName);
 
             CharacterModel characterModel = model.GetComponent<CharacterModel>();
             if (!characterModel) {
@@ -24,7 +24,7 @@ namespace Deputy.Modules {
             }
             characterModel.baseRendererInfos = prefab.GetComponentInChildren<CharacterModel>().baseRendererInfos;
 
-            Modules.Assets.ConvertAllRenderersToHopooShader(model);
+            Modules.DeputyAssets.ConvertAllRenderersToHopooShader(model);
 
             return model.gameObject;
         }
@@ -44,7 +44,7 @@ namespace Deputy.Modules {
             GameObject model = null;
             if (modelName != "mdl")
             {
-                model = Assets.LoadSurvivorModel(modelName);
+                model = DeputyAssets.LoadSurvivorModel(modelName);
                 if (model == null) model = newBodyPrefab.GetComponentInChildren<CharacterModel>().gameObject;
 
                     modelBaseTransform = AddCharacterModelToSurvivorBody(newBodyPrefab, model.transform, bodyInfo);
@@ -174,7 +174,7 @@ namespace Deputy.Modules {
 
             characterModel.autoPopulateLightInfos = true;
             characterModel.invisibilityCount = 0;
-            characterModel.temporaryOverlays = new List<TemporaryOverlay>();
+            characterModel.temporaryOverlays = new List<TemporaryOverlayInstance>();
 
             if (!preattached) {
                 SetupCustomRendererInfos(characterModel, customInfos);

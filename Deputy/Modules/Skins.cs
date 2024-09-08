@@ -146,7 +146,7 @@ namespace Deputy.Modules
                 new SkinDef.MeshReplacement
                 {
                     renderer = rendererinfos[i].renderer,
-                    mesh = Assets.mainAssetBundle.LoadAsset<Mesh>(meshes[i])
+                    mesh = DeputyAssets.mainAssetBundle.LoadAsset<Mesh>(meshes[i])
                 });
             }
 
