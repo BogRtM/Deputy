@@ -56,7 +56,7 @@ namespace Skillstates.Deputy
                     origin = base.characterBody.footPosition,
                     scale = base.characterBody.radius
                 };
-                EffectManager.SpawnEffect(Assets.landImpactEffect, effectData, false);
+                EffectManager.SpawnEffect(DeputyAssets.landImpactEffect, effectData, false);
             }
 
             Util.PlaySound("Play_bandit2_R_load", base.gameObject);

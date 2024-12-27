@@ -58,7 +58,7 @@ namespace Skillstates.Deputy
             EffectData effectData = new EffectData();
             effectData.rotation = Util.QuaternionSafeLookRotation(jumpVector);
             effectData.origin = characterBody.footPosition;
-            EffectManager.SpawnEffect(Assets.shootingStarEffect, effectData, false);
+            EffectManager.SpawnEffect(DeputyAssets.shootingStarEffect, effectData, false);
 
             Ray aimRay = base.GetAimRay();
             yPower = Mathf.Max(minYPower, aimRay.direction.y);

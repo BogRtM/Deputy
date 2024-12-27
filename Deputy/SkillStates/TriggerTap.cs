@@ -77,7 +77,7 @@ namespace Skillstates.Deputy
                 maxSpread = base.characterBody.spreadBloomAngle,
                 damage = damageCoefficient * this.damageStat,
                 force = FirePistol2.force,
-                tracerEffectPrefab = Assets.deputyTracerEffect,
+                tracerEffectPrefab = DeputyAssets.deputyTracerEffect,
                 muzzleName = muzzleIndex,
                 hitEffectPrefab = FirePistol2.hitEffectPrefab,
                 isCrit = base.RollCrit(),

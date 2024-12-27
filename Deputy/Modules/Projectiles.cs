@@ -59,10 +59,20 @@ namespace Deputy.Modules
 
         private static GameObject CreateGhostPrefab(string ghostName)
         {
-            GameObject ghostPrefab = Modules.Assets.mainAssetBundle.LoadAsset<GameObject>(ghostName);
+            GameObject ghostPrefab = Modules.DeputyAssets.mainAssetBundle.LoadAsset<GameObject>(ghostName);
+
+            if(!ghostPrefab)
+            {
+                Log.Warning("Revolver ghost prefab is null");
+            }
+
             if (!ghostPrefab.GetComponent<NetworkIdentity>()) ghostPrefab.AddComponent<NetworkIdentity>();
             if (!ghostPrefab.GetComponent<ProjectileGhostController>()) ghostPrefab.AddComponent<ProjectileGhostController>();
-
+            if (!ghostPrefab.GetComponent<VFXAttributes>())
+            {
+                var vfx = ghostPrefab.AddComponent<VFXAttributes>();
+                vfx.DoNotPool = true;
+            }
             //Modules.Assets.ConvertAllRenderersToHopooShader(ghostPrefab);
 
             return ghostPrefab;

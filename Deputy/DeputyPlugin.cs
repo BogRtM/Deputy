@@ -25,14 +25,6 @@ namespace Deputy
     [BepInDependency("com.weliveinasociety.CustomEmotesAPI", BepInDependency.DependencyFlags.SoftDependency)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     [BepInPlugin(MODUID, MODNAME, MODVERSION)]
-    [R2APISubmoduleDependency(new string[]
-    {
-        "PrefabAPI",
-        "LanguageAPI",
-        "SoundAPI",
-        "UnlockableAPI",
-        "DamageAPI"
-    })]
 
     public class DeputyPlugin : BaseUnityPlugin
     {
@@ -64,7 +56,7 @@ namespace Deputy
             PInfo = Info;
             
             Modules.Config.ReadConfig(this);
-            Modules.Assets.Initialize(); // load assets and read config
+            Modules.DeputyAssets.Initialize(); // load assets and read config
             Modules.States.RegisterStates(); // register states for networking
             Modules.Buffs.RegisterBuffs(); // add and register custom buffs/debuffs
             Modules.Projectiles.RegisterProjectiles(); // add and register custom projectiles
@@ -86,7 +78,7 @@ namespace Deputy
 
         private void Start()
         {
-            Modules.Assets.LoadSoundbank();
+            //Modules.DeputyAssets.LoadSoundbank();
         }
 
         private void Subscriptions()
@@ -116,7 +108,7 @@ namespace Deputy
             {
                 if(survivor.bodyPrefab.name == "DeputyBody")
                 {
-                    GameObject skeleton = Modules.Assets.mainAssetBundle.LoadAsset<GameObject>("DeputyHumanoidSkeleton");
+                    GameObject skeleton = Modules.DeputyAssets.mainAssetBundle.LoadAsset<GameObject>("DeputyHumanoidSkeleton");
                     CustomEmotesAPI.ImportArmature(survivor.bodyPrefab, skeleton);
                     skeleton.GetComponentInChildren<BoneMapper>().scale = 1.5f;
                 }

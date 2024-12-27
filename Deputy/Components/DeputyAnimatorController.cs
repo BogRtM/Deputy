@@ -53,7 +53,15 @@ namespace Deputy.Components
 
         private void Start()
         {
-            aimAnimator = base.GetComponentInChildren<AimAnimator>();
+            ModelLocator modelLocator = base.GetComponent<ModelLocator>();
+            Transform modelTransform = modelLocator.modelTransform;
+            aimAnimator = modelTransform.GetComponent<AimAnimator>();
+
+            if (!aimAnimator)
+            {
+                Log.Error("Deputy aim animator is null!");
+            }
+
             characterBody = base.GetComponent<CharacterBody>();
             inputBank = base.GetComponent<InputBankTest>();
         }
@@ -112,7 +120,7 @@ namespace Deputy.Components
                 aimAnimator.yawRangeMin = -175f;
                 aimAnimator.yawRangeMax = 175f;
             }
-            else if(!isSprinting && sprintYawSet)
+            else if (!isSprinting && sprintYawSet)
             {
                 sprintYawSet = false;
                 aimAnimator.giveupDuration = 3f;
@@ -120,19 +128,19 @@ namespace Deputy.Components
                 aimAnimator.yawRangeMax = 80f;
             }
 
-            if(isSprinting && inCombat && !isGrounded)
+            if (isSprinting && inCombat && !isGrounded)
             {
                 desiredYaw = sprintCombatAirYaw;
             }
-            else if(isSprinting && inCombat && isGrounded)
+            else if (isSprinting && inCombat && isGrounded)
             {
                 desiredYaw = sprintCombatGroundYaw;
             }
-            else if(!isSprinting && isMoving && inCombat)
+            else if (!isSprinting && isMoving && inCombat)
             {
                 desiredYaw = combatRunYaw;
             }
-            else if(!isMoving && !isSprinting && inCombat)
+            else if (!isMoving && !isSprinting && inCombat)
             {
                 desiredYaw = combatYaw;
             }
@@ -141,13 +149,15 @@ namespace Deputy.Components
                 desiredYaw = restYaw;
             }
 
+
+
             //yawDampValue = Mathf.SmoothDamp(modelAnimator.GetFloat("yawControl"), desiredYaw, ref yawDampVelocity, 0.1f);
             modelAnimator.SetFloat("yawControl", desiredYaw);
         }
 
         private void SetPitch()
         {
-            if((!isGrounded || isMoving) && !isSprinting)
+            if ((!isGrounded || isMoving) && !isSprinting)
             {
                 modelAnimator.SetFloat("pitchControl", 1f);
             }
