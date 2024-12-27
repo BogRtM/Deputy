@@ -1,14 +1,6 @@
-# 0.3.2 DISCLAIMER
-
-The recent 0.3.2 update was done hastily, and without any multiplayer testing. Please contact `bog_rtm` on Discord if you run into any bugs.
-
-I do not own Seekers of the Storm, so I am unaware of any potential bugs or incompatabilities with the new contact.
-
 ## Known issues
 
-Animation smoothing is currently jank. This isn't something that will affect gameplay, but under certain conditions you may see weird snapping between animations. It is something I am actively working on.
-
-It appears that under certain conditions, Brilliant Behemoth will not work with her. If you run into this bug, please contact me and send me a log report.
+Animation smoothing is currently jank. This isn't something that will affect gameplay, but under certain conditions you may see weird snapping between animations. ~~It is something I am actively working on~~.
 
 This survivor is still in active development, and thus is still lacking quite a lot of polish. Thank you for your understanding.
 
