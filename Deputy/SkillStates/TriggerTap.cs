@@ -87,7 +87,7 @@ namespace Skillstates.Deputy
                 falloffModel = BulletAttack.FalloffModel.None
             };
 
-            bulletAttack.AddModdedDamageType(DeputyPlugin.grantDeputyBuff);
+            bulletAttack.AddModdedDamageType(DeputyPlugin.grantHotPursuit);
 
             if (base.isAuthority)
                 bulletAttack.Fire();

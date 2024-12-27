@@ -34,7 +34,7 @@ namespace Deputy
         public const string MODUID = "com.Bog.Deputy";
         public const string MODNAME = "Deputy";
 
-        public const string MODVERSION = "0.3.3";
+        public const string MODVERSION = "0.3.4";
 
         // a prefix for name tokens to prevent conflicts- please capitalize all name tokens for convention
         public const string DEVELOPER_PREFIX = "BOG";
@@ -46,7 +46,7 @@ namespace Deputy
         public static GameObject deputyBodyPrefab;
         public static BodyIndex deputyBodyIndex;
 
-        public static DamageAPI.ModdedDamageType grantDeputyBuff;
+        public static DamageAPI.ModdedDamageType grantHotPursuit;
         public static DamageAPI.ModdedDamageType resetUtilityOnKill;
 
         private void Awake()
@@ -63,7 +63,7 @@ namespace Deputy
             Modules.Tokens.AddTokens(); // register name tokens
             Modules.ItemDisplays.PopulateDisplays(); // collect item display prefabs for use in our display rules
 
-            grantDeputyBuff = DamageAPI.ReserveDamageType();
+            grantHotPursuit = DamageAPI.ReserveDamageType();
             resetUtilityOnKill = DamageAPI.ReserveDamageType();
 
             // survivor initialization
@@ -157,7 +157,7 @@ namespace Deputy
         {
             orig(self, damageInfo, victim);
 
-            if (damageInfo.HasModdedDamageType(grantDeputyBuff) && damageInfo.attacker && !damageInfo.rejected)
+            if (damageInfo.HasModdedDamageType(grantHotPursuit) && damageInfo.attacker && !damageInfo.rejected)
             {
                 CharacterBody attackerBody = damageInfo.attacker.GetComponent<CharacterBody>();
                 if (attackerBody && attackerBody.bodyIndex == deputyBodyIndex)

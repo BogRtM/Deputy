@@ -45,7 +45,7 @@
       <HintPath>..\..\..\Mortician\Mortician-master\Mortician\libs SotS update\RiskofThunder-R2API_Core\R2API.Core\R2API.Core.dll</HintPath>
     </Reference>
     <Reference Include="R2API.DamageType">
-      <HintPath>..\..\..\Mortician\Mortician-master\Mortician\libs SotS update\RiskofThunder-R2API_DamageType\R2API.DamageType\R2API.DamageType.dll</HintPath>
+      <HintPath>..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Modding SotS patch\BepInEx\plugins\RiskofThunder-R2API_DamageType\R2API.DamageType\R2API.DamageType.dll</HintPath>
     </Reference>
     <Reference Include="R2API.Language">
       <HintPath>..\..\..\Mortician\Mortician-master\Mortician\libs SotS update\RiskofThunder-R2API_Language\R2API.Language\R2API.Language.dll</HintPath>

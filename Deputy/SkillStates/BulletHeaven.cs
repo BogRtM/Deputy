@@ -133,7 +133,7 @@ namespace Skillstates.Deputy
                 maxDistance = 120,
                 falloffModel = BulletAttack.FalloffModel.None
             };
-            bulletAttack.AddModdedDamageType(DeputyPlugin.grantDeputyBuff);
+            bulletAttack.AddModdedDamageType(DeputyPlugin.grantHotPursuit);
 
             currentShots++;
 

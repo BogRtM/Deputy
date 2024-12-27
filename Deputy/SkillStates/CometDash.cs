@@ -68,7 +68,7 @@ namespace Skillstates.Deputy
             attack.damage = damageCoefficient * damageStat * this.GetDamageBoostFromSpeed();
             attack.hitBoxGroup = hitBoxGroup;
             attack.hitEffectPrefab = DeputyAssets.skullCrackerImpact;
-            attack.AddModdedDamageType(DeputyPlugin.grantDeputyBuff);
+            attack.AddModdedDamageType(DeputyPlugin.grantHotPursuit);
             attack.AddModdedDamageType(DeputyPlugin.resetUtilityOnKill);
 
             EffectData effectData = new EffectData()
