@@ -1,13 +1,20 @@
 ### Latest Patch
+`0.3.4`
+```
+• Fixed some projectile bug that was breaking the whole mod
+```
+<details>
+    <summary>Previous patches</summary>
+    
+`0.3.3`
+```
+• Publicized all entity states as well as RevolverProjectileBehavior component
+```
+    
 `0.3.2`
 ```
 • Updated for Seekers of the Storm
-
-PLEASE READ THE DISCLAIMER IN THE README
 ```
-
-<details>
-    <summary>Previous patches</summary>
 
 `0.3.1`
 ```
