@@ -1,16 +1,6 @@
-# 0.3.2 DISCLAIMER
+#Latest News
 
-The recent 0.3.2 update was done hastily, and without any multiplayer testing. Please contact `bog_rtm` on Discord if you run into any bugs.
-
-I do not own Seekers of the Storm, so I am unaware of any potential bugs or incompatabilities with the new contact.
-
-## Known issues
-
-Animation smoothing is currently jank. This isn't something that will affect gameplay, but under certain conditions you may see weird snapping between animations. It is something I am actively working on.
-
-It appears that under certain conditions, Brilliant Behemoth will not work with her. If you run into this bug, please contact me and send me a log report.
-
-This survivor is still in active development, and thus is still lacking quite a lot of polish. Thank you for your understanding.
+I haven't played this game since before SotS so I'm kinda mentally clocked out right now. Just adding a quick fix for the time being.
 
 # The Deputy
 
@@ -66,8 +56,6 @@ For feedback and bug reports, please reach out to `bog_rtm` on Discord. You can 
 • Add SFX to lobby intro animation
 • General animation polishing
 ```
-
-Unless I get a sudden flash of inspiration, I have no plans to make additional alt skills.
 
 ----
 ![DeputyIcon2](https://user-images.githubusercontent.com/55299061/216585851-c6588d0c-18a1-4357-905e-79fb3b1c7fcd.png)

@@ -1,13 +1,28 @@
 ### Latest Patch
+`0.3.5`
+```
+• Fixed incompatability with Voidsent Flame
+• Added pseudopulse's SoundFixer as a dependency
+• Updated R2API dependencies
+• Updated icon
+```
+<details>
+    <summary>Previous patches</summary>
+
+`0.3.4`
+```
+• Fixed some projectile bug that was breaking the whole mod
+```
+    
+`0.3.3`
+```
+• Publicized all entity states as well as RevolverProjectileBehavior component
+```
+    
 `0.3.2`
 ```
 • Updated for Seekers of the Storm
-
-PLEASE READ THE DISCLAIMER IN THE README
 ```
-
-<details>
-    <summary>Previous patches</summary>
 
 `0.3.1`
 ```

@@ -34,7 +34,7 @@ namespace Deputy
         public const string MODUID = "com.Bog.Deputy";
         public const string MODNAME = "Deputy";
 
-        public const string MODVERSION = "0.3.4";
+        public const string MODVERSION = "0.3.5";
 
         // a prefix for name tokens to prevent conflicts- please capitalize all name tokens for convention
         public const string DEVELOPER_PREFIX = "BOG";
@@ -96,8 +96,33 @@ namespace Deputy
             }
 
             On.RoR2.GlobalEventManager.OnHitEnemy += GlobalEventManager_OnHitEnemy;
-            On.RoR2.CharacterBody.AddTimedBuff_BuffDef_float += CharacterBody_AddTimedBuff_BuffDef_float;
+            //On.RoR2.CharacterBody.AddTimedBuff_BuffDef_float += CharacterBody_AddTimedBuff_BuffDef_float;
+            On.RoR2.CharacterBody.AddTimedBuff_BuffIndex_float += CharacterBody_AddTimedBuff_BuffIndex_float;
             On.RoR2.CharacterBody.RecalculateStats += CharacterBody_RecalculateStats;
+        }
+
+        private void CharacterBody_AddTimedBuff_BuffIndex_float(On.RoR2.CharacterBody.orig_AddTimedBuff_BuffIndex_float orig, CharacterBody self, BuffIndex buffIndex, float duration)
+        {
+            if(buffIndex == Modules.Buffs.deputyBuff.buffIndex) // && self.bodyIndex == deputyBodyIndex)
+            {
+                if(self.GetBuffCount(buffIndex) > 0)
+                {
+                    foreach(CharacterBody.TimedBuff timedBuff in self.timedBuffs)
+                    {
+                        if(timedBuff.buffIndex == buffIndex)
+                        {
+                            timedBuff.timer = duration;
+                        }
+                    }
+                }
+
+                if(self.GetBuffCount(buffIndex) >= Modules.Config.maxStacks.Value)
+                {
+                    return;
+                }
+            }
+
+            orig(self, buffIndex, duration);
         }
 
         private void SurvivorCatalog_Init(On.RoR2.SurvivorCatalog.orig_Init orig)

@@ -79,7 +79,7 @@ namespace Skillstates.Deputy
             };
             EffectManager.SpawnEffect(EvisDash.blinkPrefab, effectData, false);
             EffectManager.SpawnEffect(BaseSlideState.slideEffectPrefab, effectData, false);
-            Util.PlaySound(EvisDash.endSoundString, base.gameObject);
+            Util.PlaySound("Play_merc_R_end", base.gameObject);
             base.PlayAnimation("FullBody, Override", "Dash");
 
             base.characterMotor.velocity.y = 0f;
