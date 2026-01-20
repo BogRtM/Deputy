@@ -1,8 +1,6 @@
-## Known issues
+#Latest News
 
-Animation smoothing is currently jank. This isn't something that will affect gameplay, but under certain conditions you may see weird snapping between animations. ~~It is something I am actively working on~~.
-
-This survivor is still in active development, and thus is still lacking quite a lot of polish. Thank you for your understanding.
+I haven't played this game since before SotS so I'm kinda mentally clocked out right now. Just adding a quick fix for the time being.
 
 # The Deputy
 
@@ -58,8 +56,6 @@ For feedback and bug reports, please reach out to `bog_rtm` on Discord. You can 
 • Add SFX to lobby intro animation
 • General animation polishing
 ```
-
-Unless I get a sudden flash of inspiration, I have no plans to make additional alt skills.
 
 ----
 ![DeputyIcon2](https://user-images.githubusercontent.com/55299061/216585851-c6588d0c-18a1-4357-905e-79fb3b1c7fcd.png)
