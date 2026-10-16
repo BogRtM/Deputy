@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: leftArmMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Belts
+    m_Weight: 0
+  - m_Path: Body
+    m_Weight: 0
+  - m_Path: Cuffs
+    m_Weight: 0
+  - m_Path: Guns
+    m_Weight: 0
+  - m_Path: Hat
+    m_Weight: 0
+  - m_Path: Rig
+    m_Weight: 0
+  - m_Path: Rig/ROOT
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Butt.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Butt.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/FrontHip.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/FrontHip.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/SideHip.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/SideHip.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Thigh.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Thigh.L/Calf.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Thigh.L/Calf.L/Foot.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Thigh.L/Calf.L/Foot.L/Toe.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Thigh.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Thigh.R/Calf.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Thigh.R/Calf.R/Foot.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Pelvis/Thigh.R/Calf.R/Foot.R/Toe.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/GunSpinPivot.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Index.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Index.L/Index.1.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Index.L/Index.1.L/Index.2.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Middle.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Middle.L/Middle.1.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Middle.L/Middle.1.L/Middle.2.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Pinky.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Pinky.L/Pinky.1.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Pinky.L/Pinky.1.L/Pinky.2.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Ring.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Ring.L/Ring.1.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Ring.L/Ring.1.L/Ring.2.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Thumb.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Thumb.L/Thumb.1.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Hand.L/Thumb.L/Thumb.1.L/Thumb.2.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Revolver.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.L/Upper_arm.L/Lower_arm.L/Revolver.L/Barrel.L
+    m_Weight: 1
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/GunSpinPivot.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Index.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Index.R/Index.1.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Index.R/Index.1.R/Index.2.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Middle.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Middle.R/Middle.1.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Middle.R/Middle.1.R/Middle.2.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Pinky.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Pinky.R/Pinky.1.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Pinky.R/Pinky.1.R/Pinky.2.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Revolver.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Revolver.R/Barrel.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Ring.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Ring.R/Ring.1.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Ring.R/Ring.1.R/Ring.2.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Thumb.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Thumb.R/Thumb.1.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Clavicle.R/Upper_arm.R/Lower_arm.R/Hand.R/Thumb.R/Thumb.1.R/Thumb.2.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/CTRL-Star_Chest
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004/DEF-Scarf.005
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004/DEF-Scarf.005/DEF-Scarf.006
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004/DEF-Scarf.005/DEF-Scarf.006/DEF-Scarf.007
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004/DEF-Scarf.005/DEF-Scarf.006/DEF-Scarf.007/DEF-Scarf.008
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004/DEF-Scarf.005/DEF-Scarf.006/DEF-Scarf.007/DEF-Scarf.008/DEF-Scarf.009
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004/DEF-Scarf.005/DEF-Scarf.006/DEF-Scarf.007/DEF-Scarf.008/DEF-Scarf.009/DEF-Scarf.010
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004/DEF-Scarf.005/DEF-Scarf.006/DEF-Scarf.007/DEF-Scarf.008/DEF-Scarf.009/DEF-Scarf.010/DEF-Scarf.011
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/DEF-Scarf/DEF-Scarf.001/DEF-Scarf.002/DEF-Scarf.003/DEF-Scarf.004/DEF-Scarf.005/DEF-Scarf.006/DEF-Scarf.007/DEF-Scarf.008/DEF-Scarf.009/DEF-Scarf.010/DEF-Scarf.011/DEF-Scarf.012
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/FK_Head
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/CTRL-Hat
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/CTRL-Hat/CTRL-Hat.B
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/CTRL-Hat/CTRL-Hat.F
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/CTRL-Hat/CTRL-Hat.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/CTRL-Hat/CTRL-Hat.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/Hat 1
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/Hat 1/Hat.B
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/Hat 1/Hat.F
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/Hat 1/Hat.L
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Neck/Head/Hat 1/Hat.R
+    m_Weight: 0
+  - m_Path: Rig/ROOT/base/Stomach/Stomach.1/Chest/Star_Chest
+    m_Weight: 0
+  - m_Path: Scarf
+    m_Weight: 0
+  - m_Path: Shoulder pads
+    m_Weight: 0
+  - m_Path: Star
+    m_Weight: 0
+  - m_Path: Visor
+    m_Weight: 0

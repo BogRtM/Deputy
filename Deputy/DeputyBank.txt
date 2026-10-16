@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	402310993	DeputyShoot			\Default Work Unit\Deputy\DeputyShoot	
+	1166114454	DeputyKick			\Default Work Unit\Deputy\DeputyKick	
+	3535097307	DeputyRicochet			\Default Work Unit\Deputy\DeputyRicochet	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3673881719	Volume_SFX			\Default Work Unit\Volume_SFX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	141727714	GunSlingLoop	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\Spin BSZ01_81_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\GunSlingLoop		4397120
+	174709766	5	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyRicochet\5		253084
+	226145160	KickWhoosh FS041102	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\KickWhoosh FS041102_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyKick\KickWhoosh FS041102		67648
+	536762341	KickWhoosh FS041101	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\KickWhoosh FS041101_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyKick\KickWhoosh FS041101		93248
+	658225650	1	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyRicochet\1		342696
+	763092706	6	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyRicochet\6		253088
+	763360226	3	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyRicochet\3		390144
+	789165424	DeputyShoot	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\we_colt45_ss_01_hpx_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyShoot		278592
+	794711363	KickWhoosh FS041103	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\KickWhoosh FS041103_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyKick\KickWhoosh FS041103		74816
+	944764995	2	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyRicochet\2		363784
+	1021841730	4	C:\Users\rtmbo\My project (1)\My project (1)_WwiseProject\.cache\Mac\SFX\4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Deputy\DeputyRicochet\4		253084
+

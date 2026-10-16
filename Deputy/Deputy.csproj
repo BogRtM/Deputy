@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Soundbanks\**" />
+    <EmbeddedResource Remove="Soundbanks\**" />
+    <None Remove="Soundbanks\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="deputyassets" />
+    <None Remove="DeputyBank.bnk" />
+    <None Remove="Modules\Characters\Henry.cs~RF6221a098.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+		<PackageReference Include="BepInEx.Analyzers" Version="*">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<PackageReference Include="BepInEx.Core" Version="5.*" />
+
+		<PackageReference Include="R2API.ContentManagement" Version="*" />
+
+		<PackageReference Include="R2API.DamageType" Version="*" />
+
+		<PackageReference Include="R2API.Items" Version="*" />
+		<PackageReference Include="R2API.Language" Version="*" />
+		<PackageReference Include="R2API.Prefab" Version="*" />
+		<PackageReference Include="R2API.Unlockable" Version="*" />
+
+		<PackageReference Include="UnityEngine.Modules" Version="2021.3.45" IncludeAssets="compile" />
+		<PackageReference Include="RiskOfRain2.GameLibs" Version="*-*" />
+		<PackageReference Include="MMHOOK.RoR2" Version="*" NoWarn="NU1701" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CustomEmotesAPI">
+      <HintPath>..\lib\CustomEmotesAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="UNetWeaverPatcher">
+      <HintPath>..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Modding\BepInEx\patchers\UNetWeaver\UNetWeaverPatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cecil">
+      <HintPath>..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Modding\BepInEx\patchers\UNetWeaver\Unity.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cecil.Mdb">
+      <HintPath>..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Modding\BepInEx\patchers\UNetWeaver\Unity.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cecil.Pdb">
+      <HintPath>..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Modding\BepInEx\patchers\UNetWeaver\Unity.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.UNetWeaver">
+      <HintPath>..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Modding\BepInEx\patchers\UNetWeaver\Unity.UNetWeaver.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
