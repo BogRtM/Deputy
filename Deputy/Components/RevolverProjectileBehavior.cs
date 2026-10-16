@@ -121,7 +121,7 @@ namespace Deputy.Components
           isCrit = isCrit,
           radius = 2f,
           smartCollision = true,
-          damageType = DamageType.Generic,
+          damageType = projectileDamage.damageType,
           maxDistance = 80f,
           falloffModel = BulletAttack.FalloffModel.None,
           stopperMask = LayerIndex.entityPrecise.mask

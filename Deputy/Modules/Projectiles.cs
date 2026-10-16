@@ -27,14 +27,16 @@ namespace Deputy.Modules
 
       revolverProjectile.AddComponent<RevolverProjectileBehavior>();
 
-      //ProjectileDamage projectileDamage = revolverProjectile.GetComponent<ProjectileDamage>();
-      //projectileDamage.damageType.AddModdedDamageType(DeputyPlugin.grantHotPursuit);
+      ProjectileDamage projectileDamage = revolverProjectile.GetComponent<ProjectileDamage>();
+      projectileDamage.damageType = new DamageTypeCombo(DamageType.Generic, DamageTypeExtended.Generic, DamageSource.Secondary);
 
       RotateObject rotateObject = revolverProjectile.AddComponent<RotateObject>();
       rotateObject.rotationSpeed = new Vector3(0f, -1440f, 0f);
 
       ProjectileController projectileController = revolverProjectile.GetComponent<ProjectileController>();
       GameObject revolverGhost = CreateGhostPrefab("RevolverGhost");
+      // the cloned grenade still points at its own ghost by address, which takes priority over ghostPrefab
+      projectileController.ghostPrefabAddress = new AssetReferenceT<GameObject>(string.Empty);
       projectileController.ghostPrefab = revolverGhost;
 
       ProjectileSimple projectileSimple = revolverProjectile.GetComponent<ProjectileSimple>();

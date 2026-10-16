@@ -157,7 +157,7 @@ namespace Skillstates.Deputy
                 isCrit = isCrit,
                 radius = 2f,
                 smartCollision = true,
-                damageType = DamageType.Stun1s,
+                damageType = new DamageTypeCombo(DamageType.Stun1s, DamageTypeExtended.Generic, DamageSource.Utility),
                 maxDistance = 80f,
                 falloffModel = BulletAttack.FalloffModel.None
             };

@@ -59,7 +59,7 @@ namespace Skillstates.Deputy
             this.attack = new OverlapAttack();
             attack.attacker = base.gameObject;
             attack.inflictor = base.gameObject;
-            attack.damageType = DamageType.Stun1s;
+            attack.damageType = new DamageTypeCombo(DamageType.Stun1s, DamageTypeExtended.Generic, DamageSource.Special);
             attack.procCoefficient = 1f;
             attack.teamIndex = base.GetTeam();
             attack.isCrit = base.RollCrit();
