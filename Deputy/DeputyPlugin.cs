@@ -1,4 +1,4 @@
-﻿using BepInEx;
+using BepInEx;
 using Deputy.Modules.Survivors;
 using R2API.Utils;
 using R2API;
@@ -34,7 +34,7 @@ namespace Deputy
         public const string MODUID = "com.Bog.Deputy";
         public const string MODNAME = "Deputy";
 
-        public const string MODVERSION = "0.3.5";
+        public const string MODVERSION = "0.3.6";
 
         // a prefix for name tokens to prevent conflicts- please capitalize all name tokens for convention
         public const string DEVELOPER_PREFIX = "BOG";

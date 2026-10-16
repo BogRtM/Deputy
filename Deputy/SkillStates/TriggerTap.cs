@@ -84,6 +84,7 @@ namespace Skillstates.Deputy
                 radius = FireBarrage.bulletRadius,
                 smartCollision = true,
                 maxDistance = 60f,
+                damageType = new DamageTypeCombo(DamageType.Generic, DamageTypeExtended.Generic, DamageSource.Primary),
                 falloffModel = BulletAttack.FalloffModel.None
             };
 
